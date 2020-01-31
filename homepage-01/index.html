@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>载入中..</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="icon" href="favicon.ico" type="img/x-ico" />
+		<script id="kd-js" charset="utf-8" src="common.js"></script>
+		<link rel="stylesheet" href="common.css" type="text/css" />
+
+		<!-- 闹钟 -->
+		<link href="assets/css/style.css" rel="stylesheet" />
+
+		
+		<style>
+			body{
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-attachment: fixed;
+				position: fixed;
+				width: 100%;
+				height: 100%;
+				z-index: 5;
+			}
+			.select{
+				height: 40px;
+				width: 99px;
+				font-size: 13px;
+				color: grey;
+				letter-spacing: 1px;
+				cursor: pointer;
+				appearance: none;
+				-moz-appearance: none;
+				-webkit-appearance: none;
+				font-weight: 700;
+				overflow: hidden;
+				padding: 0 8px;
+				float: left;
+				outline: none;
+				border: 1px solid #dddddd;
+				border-radius: 20px;
+				background: #dddddd;
+				text-indent: 5px;
+				position: fixed;
+				bottom: 10px;
+				right: 10px;
+				}
+			.input{
+				height: 43px;
+				width: 94%;
+				letter-spacing: 1px;
+				margin-right: 5px;
+				font-size: 17px;
+				color: #18172c;
+				border: 1px solid #bcbcbc;
+				padding: 0 12px;
+				float: left;
+				border: 1px solid #dddddd;
+				border-radius: 25px;
+				background: #dddddd;
+				border: 1px solid grey;
+				opacity: 0.8;}
+			.search-style{}
+			.clear{
+				clear: both;}
+			.input-div{
+				padding: 5px 8px 5px 8px;
+				background: transparent;
+				border-radius: 40px;
+				
+				}
+			.iframe-box{
+				width: 100%;
+				min-height: 500px;
+			}
+			@media only screen and (min-width: 640px){ 
+				 .input-div{
+					 /* margin-top: 25%; */
+				}  
+			}
+			.input:focus {outline:none;box-shadow:4px 4px 10px rgba(0,0,0,0.5);opacity: 1;border: 0}
+			.input:hover {opacity: 1; box-shadow:4px 4px 10px rgba(0,0,0,0.5);border: 0}
+			.select:focus {outline:none;border: 1px solid transparent;}
+			.bg-black{background: #1a1a1a !important;}
+			::selection {
+				color: #FCFCFC;
+				background: grey;
+				outline: thick solid grey;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div id="clock" class="light ">
+			<div class="display">
+				<div class="ampm"></div>
+				<div class="alarm"></div>
+				<div class="digits"></div>
+			</div>
+			
+		</div>
+
+		<!-- 闹钟 -->
+		<div class="overlay">
+
+			<div id="alarm-dialog">
+
+				<h2>设置倒计时:</h2>
+
+				<label class="hours">
+					时
+					<input type="number" value="0" min="0" />
+				</label>
+
+				<label class="minutes">
+					分
+					<input type="number" value="0" min="0" />
+				</label>
+
+				<label class="seconds">
+					秒
+					<input type="number" value="0" min="0" />
+				</label>
+
+				<div class="button-holder">
+					<a id="alarm-set" class="button grey">设置</a>
+					<a id="alarm-clear" class="button grey">取消</a>
+				</div>
+
+				<a class="close"></a>
+
+			</div>
+
+		</div>
+
+		<div class="overlay">
+
+			<div id="time-is-up">
+
+				<h2>时间到!</h2>
+
+				<div class="button-holder">
+					<a class="button grey">Close</a>
+				</div>
+
+			</div>
+
+		</div>
+
+		<audio id="alarm-ring" preload>
+			<source src="assets/audio/ticktac.mp3" type="audio/mpeg" />
+			<source src="assets/audio/ticktac.ogg" type="audio/ogg" />
+		</audio>
+		
+
+		<!-- 搜索框 -->
+        <div class="content" id="content">
+		</div>
+		<script src="index.js"></script>
+
+
+		<!-- 闹钟 -->
+		<script src="assets/js/jquery-1.11.0.min.js"></script>
+		<!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script> -->
+		<!-- moment来自：https://blog.csdn.net/weixin_41000111/article/details/78916987 -->
+		<script src="https://cdn.bootcss.com/moment.js/2.19.4/moment.min.js"></script>
+		<script src="assets/js/script.js"></script>
+		
+
+	</body>
+</html>

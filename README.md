@@ -1,39 +1,60 @@
 # 浏览器首页
 
-#### 介绍
-{**以下是码云平台说明，您可以替换此简介**
-码云是 OSCHINA 推出的基于 Git 的代码托管平台（同时支持 SVN）。专为开发者提供稳定、高效、安全的云端软件开发协作平台
-无论是个人、团队、或是企业，都能够用码云实现代码托管、项目管理、协作开发。企业项目请看 [https://gitee.com/enterprises](https://gitee.com/enterprises)}
+## homepage-01
 
-#### 软件架构
-软件架构说明
+这是一个简洁的浏览器首页，纯html代码，没有后端。可以自定义网页的背景图片，快捷切换到百度、Bing、京东、知乎等搜索引擎。链接：[浏览器首页](http://emm233.cn/start/)（修改自http://cdnaliyun.oss-cn-hangzhou.aliyuncs.com/ ）
+
+以下将介绍它的使用方法：
+
+### 1 设置背景图片
+
+浏览器可以通过使用url设置网页的背景：
+
+#### 1.1 内置图片源
+
+- 在搜索框输入 `*#001#*`并回车，设置背景图片为Bing当天的图片
+- 在搜索框输入 `*#002#*`并回车，设置背景图片为随机图片
+
+#### 1.2 自定义图片源
+
+- 在搜索框输入```*#003+url#*```，设置背景图片为url返回的图片
+
+### 2 切换搜索引擎
+
+当搜索框未聚焦时，可以使用快捷键快速切换搜索
+
+引擎具体快捷键为
+
+```
+b	百度一下
+i	Bing
+j	京东搜索
+r	Runoob
+z	知乎搜索
+w	微博搜索
+c	CSDN博客
+g	Github
+m	BT蚂蚁
+
+n	下一个
+```
+### 3 其他功能
+
+- 在搜索框输入```*#help#*```，跳转到首页的说明文档页面（页面功能可能发生变化，可能会失效。）
+- 连续点击四次页面，会隐藏搜索框和时间
+
+### 4 说明
+
+一些图片源API
+
+- https://www.12580sky.com/fenxiang/17217.html
+- https://www.cnblogs.com/bgwhite/p/9403285.htmlm
+- <https://rthsoftware.cn/zh-cn/bing-wallpaper.html>
 
 
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
 
 
-#### 码云特技
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5.  码云官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+## homepage-02
+
+修改自：<https://yyv.me/4679.html>
